@@ -1,0 +1,1 @@
+../../../YJSDWebImage/YJSDWebImage_librarys/Headers/SDImageIOAnimatedCoder.h

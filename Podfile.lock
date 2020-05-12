@@ -1,0 +1,28 @@
+PODS:
+  - MBProgressHUD (1.2.0)
+  - YJMJExtension (3.2.2):
+    - MBProgressHUD (~> 1.0)
+  - YJSDWebImage (5.9.0.1)
+  - YJYYModel (1.0.5)
+
+DEPENDENCIES:
+  - YJMJExtension
+  - YJSDWebImage
+  - YJYYModel
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - MBProgressHUD
+    - YJMJExtension
+    - YJSDWebImage
+    - YJYYModel
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  YJMJExtension: 97e87d056d63aa4ef107fedf371aaa81e529f6da
+  YJSDWebImage: 0b938f9a2d57a38a10c6c5f530d043b104b651f0
+  YJYYModel: 026dee0b58398502f2ed3a8aa3308a50df9da9b1
+
+PODFILE CHECKSUM: 43fff699b55bc613ccc536d8490ab650e1363d69
+
+COCOAPODS: 1.9.1
