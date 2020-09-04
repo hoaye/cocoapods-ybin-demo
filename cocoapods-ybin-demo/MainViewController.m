@@ -61,13 +61,13 @@
         
     } else if (btn.tag == 2) {
         
-        YJUserModel *model = [YJUserModel mj_objectWithKeyValues:self.dict context:nil];
+        YJUserModel *model = [YJUserModel mj_objectWithKeyValues:_dict context:nil];
         NSLog(@"MJ-->%@", model.address.name);
         
         
     } else if (btn.tag == 3) {
         
-        YJUserModel *model = [YJUserModel mj_objectWithKeyValues:self.dict context:nil];
+        YJUserModel *model = [YJUserModel mj_objectWithKeyValues:_dict context:nil];
         NSString *jsonString = [model yy_modelToJSONString];
         NSLog(@"YY-->%@", jsonString);
         

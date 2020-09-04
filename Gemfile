@@ -22,4 +22,5 @@ if pod_version.empty?
 else
   gem 'cocoapods', pod_version
   gem 'cocoapods-packager'
+  gem 'cocoapods-ybin'
 end
