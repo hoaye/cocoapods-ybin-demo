@@ -11,6 +11,7 @@
 #import <UIImageView+WebCache.h>
 #import <NSObject+YYModel.h>
 #import "YJUserModel.h"
+#import <ElegantTableView/ElegantTableViewGenerator.h>
 
 @interface MainViewController ()
 
@@ -35,6 +36,18 @@
     [self.view addSubview:self.btn1];
     [self.view addSubview:self.btn2];
     [self.view addSubview:self.btn3];
+    
+    NSArray *dataSources = @[@"你", @"我", @"他", @"1", @"2", @"3", @"哈哈", @"嘿嘿", @"嘎嘎"];
+    ElegantTableViewGenerator *tableViewGenrator = [ElegantTableViewGenerator shareInstance];
+    CGRect tableViewFrame = CGRectMake(0, CGRectGetMaxY(self.btn3.frame) + 10, [UIScreen mainScreen].bounds.size.width, 400);
+    
+    UITableView *tableView = [tableViewGenrator createWithFrame:tableViewFrame titles:dataSources subTitles:nil rowHeight:44 didSelectRowBlock:^(UITableView *tableView, NSIndexPath *indexPath) {
+        NSLog(@"点击TableView-->%ld", (long)indexPath.row);
+    } didScrollBlock:^(UIScrollView *tableView, CGPoint contentOffset) {
+        NSLog(@"滚动TableView-->%@", NSStringFromCGPoint(contentOffset));
+    }];
+    tableView.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:tableView];
     
     self.imgPaths = @[
     @"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1528698235,2877871487&fm=26&gp=0.jpg",

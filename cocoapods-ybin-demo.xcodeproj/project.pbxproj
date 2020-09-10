@@ -15,6 +15,7 @@
 		0086D01024FF82C700AB3A0D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0086D00F24FF82C700AB3A0D /* MainViewController.m */; };
 		00B61DF62500E3C200D11776 /* default_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B61DF52500E3C200D11776 /* default_image.png */; };
 		00B61DFA2500E8A200D11776 /* YJUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B61DF92500E8A200D11776 /* YJUserModel.m */; };
+		00B61DFC2508F87800D11776 /* ElegantTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B61DFB2508F87700D11776 /* ElegantTableView.framework */; };
 		F2EDBB580F599FCAE580890E /* libPods-cocoapods-ybin-demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 112FA238A7C308C5E3CAE4E3 /* libPods-cocoapods-ybin-demo.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		00B61DF52500E3C200D11776 /* default_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_image.png; sourceTree = "<group>"; };
 		00B61DF82500E8A200D11776 /* YJUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJUserModel.h; sourceTree = "<group>"; };
 		00B61DF92500E8A200D11776 /* YJUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJUserModel.m; sourceTree = "<group>"; };
+		00B61DFB2508F87700D11776 /* ElegantTableView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ElegantTableView.framework; sourceTree = "<group>"; };
 		07E4FDD8CC77636C2565212D /* Pods-cocoapods-ybin-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoapods-ybin-demo.release.xcconfig"; path = "Target Support Files/Pods-cocoapods-ybin-demo/Pods-cocoapods-ybin-demo.release.xcconfig"; sourceTree = "<group>"; };
 		112FA238A7C308C5E3CAE4E3 /* libPods-cocoapods-ybin-demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cocoapods-ybin-demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB87C8C1027A2D2C04184100 /* Pods-cocoapods-ybin-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoapods-ybin-demo.debug.xcconfig"; path = "Target Support Files/Pods-cocoapods-ybin-demo/Pods-cocoapods-ybin-demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2EDBB580F599FCAE580890E /* libPods-cocoapods-ybin-demo.a in Frameworks */,
+				00B61DFC2508F87800D11776 /* ElegantTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +108,7 @@
 		047D66599190E377C324C1B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00B61DFB2508F87700D11776 /* ElegantTableView.framework */,
 				112FA238A7C308C5E3CAE4E3 /* libPods-cocoapods-ybin-demo.a */,
 			);
 			name = Frameworks;
@@ -362,6 +366,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33K3DU6932;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "cocoapods-ybin-demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -381,6 +389,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33K3DU6932;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "cocoapods-ybin-demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
